@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpNotExtendedException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Not Extended." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

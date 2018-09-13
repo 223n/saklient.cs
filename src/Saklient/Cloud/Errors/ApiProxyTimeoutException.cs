@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public ApiProxyTimeoutException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "APIプロクシがタイムアウトしました。サーバが混雑している可能性があります。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

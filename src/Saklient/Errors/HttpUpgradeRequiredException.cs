@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpUpgradeRequiredException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Upgrade Required." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

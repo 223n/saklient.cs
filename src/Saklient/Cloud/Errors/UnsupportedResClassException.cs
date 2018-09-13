@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public UnsupportedResClassException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "不適切な要求です。この種類のリソースは要求された操作に対応しません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

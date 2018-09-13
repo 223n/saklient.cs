@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public PaymentTelCertificationException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求を受け付けできません。電話認証を先に実行してください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

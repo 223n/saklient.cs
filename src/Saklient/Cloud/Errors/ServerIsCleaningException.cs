@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public ServerIsCleaningException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。サーバが終了処理中です。しばらく時間をおいてから再度お試しください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

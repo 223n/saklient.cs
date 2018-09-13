@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public ReplicaNotFoundException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "対象が見つかりません。このストレージには指定リソースの複製が存在しません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

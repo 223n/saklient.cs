@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public InvalidRangeException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "不適切な要求です。パラメータに含まれている値の範囲が一部不正です。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

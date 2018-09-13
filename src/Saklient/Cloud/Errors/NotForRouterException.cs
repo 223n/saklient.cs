@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public NotForRouterException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。ルータには適用できません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

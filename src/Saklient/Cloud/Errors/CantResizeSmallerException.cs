@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public CantResizeSmallerException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "不適切な要求です。現在の容量よりも小さくリサイズすることはできません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

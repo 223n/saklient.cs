@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public OldStoragePlanException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。旧ストレージディスクの提供は終了しました。サーバから該当するディスクを取り外した後、再度お試しください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

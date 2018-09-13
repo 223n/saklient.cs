@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpExpectationFailedException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Expectation Failed." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

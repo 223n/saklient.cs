@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public DuplicateEntryException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。リソースが既に存在するか、リソース同士が既に関連付けられています。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

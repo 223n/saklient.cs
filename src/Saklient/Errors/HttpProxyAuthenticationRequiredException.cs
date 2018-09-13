@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpProxyAuthenticationRequiredException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Proxy Authentication Required." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

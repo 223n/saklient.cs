@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public DisabledInSandboxException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作は許可されていません。このゾーンではこの操作は禁止されています。他のゾーンでお試しください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

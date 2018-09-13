@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public IllegalDasUsageException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。DASの利用方法に問題があります。1台のサーバには同一のストレージ上にあるDASのみを接続できます。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

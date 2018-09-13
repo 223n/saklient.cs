@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public ConnectToSameSwitchException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。複数のインタフェースから同一のスイッチに接続することはできません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

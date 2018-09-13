@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public DeleteRouterB4SwitchException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。ルータを削除することでスイッチは同時に削除されます。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

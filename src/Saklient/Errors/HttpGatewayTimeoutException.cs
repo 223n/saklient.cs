@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpGatewayTimeoutException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Gateway Timeout." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

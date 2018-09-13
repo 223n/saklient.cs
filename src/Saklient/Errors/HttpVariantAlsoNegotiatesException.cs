@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpVariantAlsoNegotiatesException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Variant Also Negotiates." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public ServerCouldNotStopException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "サービスが利用できません。サーバを停止できません。再度お試しください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

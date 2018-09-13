@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public DiskConnectionLimitException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。この接続インタフェースにこれ以上のディスクを接続することができません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

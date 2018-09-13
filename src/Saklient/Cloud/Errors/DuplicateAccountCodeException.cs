@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public DuplicateAccountCodeException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。同一アカウント名で複数のアカウントを作成することはできません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

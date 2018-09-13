@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public BootFailureByLockException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "サービスが利用できません。サーバが予期せず終了したため、ロックされています。しばらく時間をおいてから再度お試しください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpFailedDependencyException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Failed Dependency." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public CopyToItselfException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "不適切な要求です。自分自身をソースとするコピーはできません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

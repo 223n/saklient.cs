@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public AccessSakuraException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作は許可されていません。さくらインターネットの会員メニューより認証後に実行してください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

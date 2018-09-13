@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public BootFailureInGroupException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "サービスが利用できません。サーバ起動グループ指定に問題がある可能性があります。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpException(long status, string code=null, string message="") : base(message)
 		{
-			/*!base!*/;
+			/*!base!*/
 			this.Status = status;
 			this.Code = code;
 		}

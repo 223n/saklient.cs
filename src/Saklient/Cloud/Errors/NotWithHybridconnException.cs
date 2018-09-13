@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public NotWithHybridconnException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。ハイブリッド接続と併用する場合はお問い合わせください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public ResAlreadyConnectedException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。このリソースは他のリソースと既に接続されています。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpMethodNotAllowedException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求されたHTTPメソッドは対応していません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

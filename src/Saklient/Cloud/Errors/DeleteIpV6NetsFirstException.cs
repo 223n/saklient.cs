@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public DeleteIpV6NetsFirstException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。ルータを削除する前に、IPv6ネットワークの割当を解除してください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

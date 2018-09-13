@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public ServerOperationFailureException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "サービスが利用できません。サーバの操作に失敗しました。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

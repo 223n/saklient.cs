@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public TemplateFtpIsOpenException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。テンプレートのFTP共有を終了後に実行してください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

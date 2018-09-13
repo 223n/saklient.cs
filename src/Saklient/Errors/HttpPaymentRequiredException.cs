@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpPaymentRequiredException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Payment Required." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

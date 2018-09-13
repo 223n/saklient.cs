@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public DiskLicenseMismatchException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。ライセンスの問題により、組み合わせて使用できないディスクが接続されています。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

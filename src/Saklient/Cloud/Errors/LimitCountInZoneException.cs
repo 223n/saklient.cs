@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public LimitCountInZoneException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求を受け付けできません。ゾーン内リソース数上限により、リソースの割り当てに失敗しました。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

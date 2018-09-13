@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public DeleteResB4AccountException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。現在のアカウントで使用している全てのリソースを削除した後に実行してください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

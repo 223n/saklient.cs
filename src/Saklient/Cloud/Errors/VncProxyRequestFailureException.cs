@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public VncProxyRequestFailureException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "サービスが利用できません。VNCプロクシの要求に失敗しました。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

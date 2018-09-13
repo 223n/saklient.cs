@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public ParamIpNotFoundException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "不適切な要求です。パラメータで指定されたIPアドレスを含むネットワークが存在しません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public InvalidParamCombException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "不適切な要求です。同時に指定できないパラメータが含まれています。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

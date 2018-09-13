@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public PaymentCreditCardException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求を受け付けできません。クレジットカードの使用期限、利用限度額をご確認ください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpGoneException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Gone." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

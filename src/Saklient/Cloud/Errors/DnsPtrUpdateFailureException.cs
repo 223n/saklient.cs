@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public DnsPtrUpdateFailureException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "サービスが利用できません。PTRレコードを設定できません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

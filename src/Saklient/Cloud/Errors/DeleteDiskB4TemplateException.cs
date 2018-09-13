@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public DeleteDiskB4TemplateException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。このテンプレートから作成したすべてのディスクを削除した後に実行してください。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

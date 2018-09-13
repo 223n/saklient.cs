@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpRequestedRangeNotSatisfiableException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Requested Range Not Satisfiable." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

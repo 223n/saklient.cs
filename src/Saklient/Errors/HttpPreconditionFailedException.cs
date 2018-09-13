@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpPreconditionFailedException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Precondition Failed." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

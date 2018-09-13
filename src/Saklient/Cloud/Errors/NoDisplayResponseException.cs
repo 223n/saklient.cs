@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public NoDisplayResponseException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "サービスが利用できません。サーバの画面が応答していません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

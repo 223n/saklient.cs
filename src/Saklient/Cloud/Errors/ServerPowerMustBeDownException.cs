@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public ServerPowerMustBeDownException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。サーバが起動中にはこの操作を行えません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

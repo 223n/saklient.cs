@@ -12,7 +12,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public SaklientException(string code=null, string message="") : base(message)
 		{
-			/*!base!*/;
+			/*!base!*/
 			this.Code = code;
 		}
 		

@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public ResourcePathNotFoundException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "対象が見つかりません。パスに誤りがあります。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpNotImplementedException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Not Implemented." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

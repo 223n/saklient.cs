@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public SizeMismatchException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "不適切な要求です。参照するリソースのサイズが合致しません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

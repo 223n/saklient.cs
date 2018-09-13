@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public MustBeOfSameZoneException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "不適切な要求です。参照するリソースは同一ゾーンに存在しなければなりません。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

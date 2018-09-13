@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public FtpIsAlreadyOpenException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作を行えません。FTP共有は既に開始されています。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

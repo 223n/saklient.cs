@@ -15,7 +15,7 @@ namespace Saklient.Errors
 		/// </summary>
 		public HttpLockedException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "HTTPエラー。Locked." : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

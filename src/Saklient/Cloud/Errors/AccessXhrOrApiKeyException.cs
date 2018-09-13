@@ -15,7 +15,7 @@ namespace Saklient.Cloud.Errors
 		/// </summary>
 		public AccessXhrOrApiKeyException(long status, string code=null, string message="") : base(status, code, message == null || message == "" ? "要求された操作は許可されていません。XHRまたはAPIキーによるアクセスのみ許可されています。" : message)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}
