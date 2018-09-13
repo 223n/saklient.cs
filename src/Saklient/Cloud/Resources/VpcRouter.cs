@@ -13,7 +13,7 @@ namespace Saklient.Cloud.Resources
 		
 		public VpcRouter(Client client, object obj, bool wrapped=false) : base(client, obj, wrapped)
 		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}

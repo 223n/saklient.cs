@@ -11,28 +11,19 @@ namespace Saklient.Cloud
 	{
 		
 		internal Model_Region _Region;
-		
-		internal Model_Region Get_region()
-		{
-			return this._Region;
-		}
-		
-		/// <summary>リージョン情報。
-		/// </summary>
-		public Model_Region Region
-		{
-			get { return this.Get_region(); }
-		}
-		
-		/// <summary>
-		/// 
-		/// <param name="client" />
-		/// </summary>
-		public Facility(Client client)
-		{
-			this._Region = new Model_Region(client);
-		}
-		
-	}
+
+        internal Model_Region Get_region() => this._Region;
+
+        /// <summary>リージョン情報。
+        /// </summary>
+        public Model_Region Region => this.Get_region();
+
+        /// <summary>
+        /// 
+        /// <param name="client" />
+        /// </summary>
+        public Facility(Client client) => this._Region = new Model_Region(client);
+
+    }
 	
 }

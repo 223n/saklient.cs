@@ -14,66 +14,42 @@ namespace Saklient.Cloud
 	{
 		
 		internal Model_ServerPlan _Server;
-		
-		internal Model_ServerPlan Get_server()
-		{
-			return this._Server;
-		}
-		
-		/// <summary>サーバプラン情報。
-		/// </summary>
-		public Model_ServerPlan Server
-		{
-			get { return this.Get_server(); }
-		}
-		
-		internal Model_DiskPlan _Disk;
-		
-		internal Model_DiskPlan Get_disk()
-		{
-			return this._Disk;
-		}
-		
-		/// <summary>ディスクプラン情報。
-		/// </summary>
-		public Model_DiskPlan Disk
-		{
-			get { return this.Get_disk(); }
-		}
-		
-		internal Model_RouterPlan _Router;
-		
-		internal Model_RouterPlan Get_router()
-		{
-			return this._Router;
-		}
-		
-		/// <summary>ルータ帯域プラン情報。
-		/// </summary>
-		public Model_RouterPlan Router
-		{
-			get { return this.Get_router(); }
-		}
-		
-		internal Model_LicenseInfo _License;
-		
-		internal Model_LicenseInfo Get_license()
-		{
-			return this._License;
-		}
-		
-		/// <summary>ライセンス種別情報。
-		/// </summary>
-		public Model_LicenseInfo License
-		{
-			get { return this.Get_license(); }
-		}
-		
-		/// <summary>
-		/// 
-		/// <param name="client" />
-		/// </summary>
-		public Product(Client client)
+
+        internal Model_ServerPlan Get_server() => this._Server;
+
+        /// <summary>サーバプラン情報。
+        /// </summary>
+        public Model_ServerPlan Server => this.Get_server();
+
+        internal Model_DiskPlan _Disk;
+
+        internal Model_DiskPlan Get_disk() => this._Disk;
+
+        /// <summary>ディスクプラン情報。
+        /// </summary>
+        public Model_DiskPlan Disk => this.Get_disk();
+
+        internal Model_RouterPlan _Router;
+
+        internal Model_RouterPlan Get_router() => this._Router;
+
+        /// <summary>ルータ帯域プラン情報。
+        /// </summary>
+        public Model_RouterPlan Router => this.Get_router();
+
+        internal Model_LicenseInfo _License;
+
+        internal Model_LicenseInfo Get_license() => this._License;
+
+        /// <summary>ライセンス種別情報。
+        /// </summary>
+        public Model_LicenseInfo License => this.Get_license();
+
+        /// <summary>
+        /// 
+        /// <param name="client" />
+        /// </summary>
+        public Product(Client client)
 		{
 			this._Server = new Model_ServerPlan(client);
 			this._Disk = new Model_DiskPlan(client);

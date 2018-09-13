@@ -28,246 +28,144 @@ namespace Saklient.Cloud
 	{
 		
 		internal Client _Client;
-		
-		internal Client Get_client()
-		{
-			return this._Client;
-		}
-		
-		public Client Client
-		{
-			get { return this.Get_client(); }
-		}
-		
-		internal Product _Product;
-		
-		internal Product Get_product()
-		{
-			return this._Product;
-		}
-		
-		/// <summary>商品情報にアクセスするためのモデルを集めたオブジェクト。
-		/// </summary>
-		public Product Product
-		{
-			get { return this.Get_product(); }
-		}
-		
-		internal Facility _Facility;
-		
-		internal Facility Get_facility()
-		{
-			return this._Facility;
-		}
-		
-		/// <summary>設備情報にアクセスするためのモデルを集めたオブジェクト。
-		/// </summary>
-		public Facility Facility
-		{
-			get { return this.Get_facility(); }
-		}
-		
-		internal Model_Icon _Icon;
-		
-		internal Model_Icon Get_icon()
-		{
-			return this._Icon;
-		}
-		
-		/// <summary>アイコンにアクセスするためのモデル。
-		/// </summary>
-		public Model_Icon Icon
-		{
-			get { return this.Get_icon(); }
-		}
-		
-		internal Model_Server _Server;
-		
-		internal Model_Server Get_server()
-		{
-			return this._Server;
-		}
-		
-		/// <summary>サーバにアクセスするためのモデル。
-		/// </summary>
-		public Model_Server Server
-		{
-			get { return this.Get_server(); }
-		}
-		
-		internal Model_Disk _Disk;
-		
-		internal Model_Disk Get_disk()
-		{
-			return this._Disk;
-		}
-		
-		/// <summary>ディスクにアクセスするためのモデル。
-		/// </summary>
-		public Model_Disk Disk
-		{
-			get { return this.Get_disk(); }
-		}
-		
-		internal Model_Appliance _Appliance;
-		
-		internal Model_Appliance Get_appliance()
-		{
-			return this._Appliance;
-		}
-		
-		/// <summary>アプライアンスにアクセスするためのモデル。
-		/// </summary>
-		public Model_Appliance Appliance
-		{
-			get { return this.Get_appliance(); }
-		}
-		
-		internal Model_Archive _Archive;
-		
-		internal Model_Archive Get_archive()
-		{
-			return this._Archive;
-		}
-		
-		/// <summary>アーカイブにアクセスするためのモデル。
-		/// </summary>
-		public Model_Archive Archive
-		{
-			get { return this.Get_archive(); }
-		}
-		
-		internal Model_IsoImage _IsoImage;
-		
-		internal Model_IsoImage Get_isoImage()
-		{
-			return this._IsoImage;
-		}
-		
-		/// <summary>ISOイメージにアクセスするためのモデル。
-		/// </summary>
-		public Model_IsoImage IsoImage
-		{
-			get { return this.Get_isoImage(); }
-		}
-		
-		internal Model_Iface _Iface;
-		
-		internal Model_Iface Get_iface()
-		{
-			return this._Iface;
-		}
-		
-		/// <summary>インタフェースにアクセスするためのモデル。
-		/// </summary>
-		public Model_Iface Iface
-		{
-			get { return this.Get_iface(); }
-		}
-		
-		internal Model_Swytch _Swytch;
-		
-		internal Model_Swytch Get_swytch()
-		{
-			return this._Swytch;
-		}
-		
-		/// <summary>スイッチにアクセスするためのモデル。
-		/// </summary>
-		public Model_Swytch Swytch
-		{
-			get { return this.Get_swytch(); }
-		}
-		
-		internal Model_Router _Router;
-		
-		internal Model_Router Get_router()
-		{
-			return this._Router;
-		}
-		
-		/// <summary>ルータにアクセスするためのモデル。
-		/// </summary>
-		public Model_Router Router
-		{
-			get { return this.Get_router(); }
-		}
-		
-		internal Model_Bridge _Bridge;
-		
-		internal Model_Bridge Get_bridge()
-		{
-			return this._Bridge;
-		}
-		
-		/// <summary>ブリッジにアクセスするためのモデル。
-		/// </summary>
-		public Model_Bridge Bridge
-		{
-			get { return this.Get_bridge(); }
-		}
-		
-		internal Model_Ipv6Net _Ipv6Net;
-		
-		internal Model_Ipv6Net Get_ipv6Net()
-		{
-			return this._Ipv6Net;
-		}
-		
-		/// <summary>IPv6ネットワークにアクセスするためのモデル。
-		/// </summary>
-		public Model_Ipv6Net Ipv6Net
-		{
-			get { return this.Get_ipv6Net(); }
-		}
-		
-		internal Model_Script _Script;
-		
-		internal Model_Script Get_script()
-		{
-			return this._Script;
-		}
-		
-		/// <summary>スクリプトにアクセスするためのモデル。
-		/// </summary>
-		public Model_Script Script
-		{
-			get { return this.Get_script(); }
-		}
-		
-		internal Model_CommonServiceItem _CommonServiceItem;
-		
-		internal Model_CommonServiceItem Get_commonServiceItem()
-		{
-			return this._CommonServiceItem;
-		}
-		
-		/// <summary>共通サービス契約にアクセスするためのモデル。
-		/// </summary>
-		public Model_CommonServiceItem CommonServiceItem
-		{
-			get { return this.Get_commonServiceItem(); }
-		}
-		
-		internal Model_License _License;
-		
-		internal Model_License Get_license()
-		{
-			return this._License;
-		}
-		
-		/// <summary>ライセンスにアクセスするためのモデル。
-		/// </summary>
-		public Model_License License
-		{
-			get { return this.Get_license(); }
-		}
-		
-		/// <summary>
-		/// 
-		/// <param name="client" />
-		/// </summary>
-		internal API(Client client)
+
+        internal Client Get_client() => this._Client;
+
+        public Client Client => this.Get_client();
+
+        internal Product _Product;
+
+        internal Product Get_product() => this._Product;
+
+        /// <summary>商品情報にアクセスするためのモデルを集めたオブジェクト。
+        /// </summary>
+        public Product Product => this.Get_product();
+
+        internal Facility _Facility;
+
+        internal Facility Get_facility() => this._Facility;
+
+        /// <summary>設備情報にアクセスするためのモデルを集めたオブジェクト。
+        /// </summary>
+        public Facility Facility => this.Get_facility();
+
+        internal Model_Icon _Icon;
+
+        internal Model_Icon Get_icon() => this._Icon;
+
+        /// <summary>アイコンにアクセスするためのモデル。
+        /// </summary>
+        public Model_Icon Icon => this.Get_icon();
+
+        internal Model_Server _Server;
+
+        internal Model_Server Get_server() => this._Server;
+
+        /// <summary>サーバにアクセスするためのモデル。
+        /// </summary>
+        public Model_Server Server => this.Get_server();
+
+        internal Model_Disk _Disk;
+
+        internal Model_Disk Get_disk() => this._Disk;
+
+        /// <summary>ディスクにアクセスするためのモデル。
+        /// </summary>
+        public Model_Disk Disk => this.Get_disk();
+
+        internal Model_Appliance _Appliance;
+
+        internal Model_Appliance Get_appliance() => this._Appliance;
+
+        /// <summary>アプライアンスにアクセスするためのモデル。
+        /// </summary>
+        public Model_Appliance Appliance => this.Get_appliance();
+
+        internal Model_Archive _Archive;
+
+        internal Model_Archive Get_archive() => this._Archive;
+
+        /// <summary>アーカイブにアクセスするためのモデル。
+        /// </summary>
+        public Model_Archive Archive => this.Get_archive();
+
+        internal Model_IsoImage _IsoImage;
+
+        internal Model_IsoImage Get_isoImage() => this._IsoImage;
+
+        /// <summary>ISOイメージにアクセスするためのモデル。
+        /// </summary>
+        public Model_IsoImage IsoImage => this.Get_isoImage();
+
+        internal Model_Iface _Iface;
+
+        internal Model_Iface Get_iface() => this._Iface;
+
+        /// <summary>インタフェースにアクセスするためのモデル。
+        /// </summary>
+        public Model_Iface Iface => this.Get_iface();
+
+        internal Model_Swytch _Swytch;
+
+        internal Model_Swytch Get_swytch() => this._Swytch;
+
+        /// <summary>スイッチにアクセスするためのモデル。
+        /// </summary>
+        public Model_Swytch Swytch => this.Get_swytch();
+
+        internal Model_Router _Router;
+
+        internal Model_Router Get_router() => this._Router;
+
+        /// <summary>ルータにアクセスするためのモデル。
+        /// </summary>
+        public Model_Router Router => this.Get_router();
+
+        internal Model_Bridge _Bridge;
+
+        internal Model_Bridge Get_bridge() => this._Bridge;
+
+        /// <summary>ブリッジにアクセスするためのモデル。
+        /// </summary>
+        public Model_Bridge Bridge => this.Get_bridge();
+
+        internal Model_Ipv6Net _Ipv6Net;
+
+        internal Model_Ipv6Net Get_ipv6Net() => this._Ipv6Net;
+
+        /// <summary>IPv6ネットワークにアクセスするためのモデル。
+        /// </summary>
+        public Model_Ipv6Net Ipv6Net => this.Get_ipv6Net();
+
+        internal Model_Script _Script;
+
+        internal Model_Script Get_script() => this._Script;
+
+        /// <summary>スクリプトにアクセスするためのモデル。
+        /// </summary>
+        public Model_Script Script => this.Get_script();
+
+        internal Model_CommonServiceItem _CommonServiceItem;
+
+        internal Model_CommonServiceItem Get_commonServiceItem() => this._CommonServiceItem;
+
+        /// <summary>共通サービス契約にアクセスするためのモデル。
+        /// </summary>
+        public Model_CommonServiceItem CommonServiceItem => this.Get_commonServiceItem();
+
+        internal Model_License _License;
+
+        internal Model_License Get_license() => this._License;
+
+        /// <summary>ライセンスにアクセスするためのモデル。
+        /// </summary>
+        public Model_License License => this.Get_license();
+
+        /// <summary>
+        /// 
+        /// <param name="client" />
+        /// </summary>
+        internal API(Client client)
 		{
 			this._Client = client;
 			this._Product = new Product(client);
@@ -314,10 +212,8 @@ namespace Saklient.Cloud
 		{
 			API ret = new API(this._Client.CloneInstance());
 			string suffix = "";
-			if (name == "is1x" || name == "is1y") {
-				suffix = "-test";
-			}
-			ret._Client.SetApiRoot("https://secure.sakura.ad.jp/cloud" + suffix + "/");
+			if (name == "is1x" || name == "is1y") suffix = "-test";
+            ret._Client.SetApiRoot("https://secure.sakura.ad.jp/cloud" + suffix + "/");
 			ret._Client.SetApiRootSuffix("zone/" + name);
 			return ret;
 		}

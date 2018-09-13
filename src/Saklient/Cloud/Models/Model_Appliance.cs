@@ -14,175 +14,120 @@ namespace Saklient.Cloud.Models
 	/// </summary>
 	public class Model_Appliance : Model
 	{
-		
-		internal override string _ApiPath()
-		{
-			return "/appliance";
-		}
-		
-		internal override string _RootKey()
-		{
-			return "Appliance";
-		}
-		
-		internal override string _RootKeyM()
-		{
-			return "Appliances";
-		}
-		
-		internal override string _ClassName()
-		{
-			return "Appliance";
-		}
-		
-		internal override Resource _CreateResourceImpl(object obj, bool wrapped=false)
+
+        internal override string _ApiPath() => "/appliance";
+
+        internal override string _RootKey() => "Appliance";
+
+        internal override string _RootKeyM() => "Appliances";
+
+        internal override string _ClassName() => "Appliance";
+
+        internal override Resource _CreateResourceImpl(object obj, bool wrapped=false)
 		{
 			Appliance ret = new Appliance(this._Client, obj, wrapped);
 			string clazz = ((string)(ret.Clazz));
-			if (clazz == "loadbalancer") {
+			if (clazz == "loadbalancer")
 				return new LoadBalancer(this._Client, obj, wrapped);
-			}
-			if (clazz == "vpcrouter") {
+			if (clazz == "vpcrouter")
 				return new VpcRouter(this._Client, obj, wrapped);
-			}
 			return ret;
 		}
-		
-		/// <summary>次に取得するリストの開始オフセットを指定します。
-		/// 
-		/// <param name="offset">オフセット</param>
-		/// <returns>this</returns>
-		/// </summary>
-		public Model_Appliance Offset(long offset)
+
+        /// <summary>次に取得するリストの開始オフセットを指定します。
+        /// 
+        /// <param name="offset">オフセット</param>
+        /// <returns>this</returns>
+        /// </summary>
+        public Model_Appliance Offset(long offset) => ((Model_Appliance)(this._Offset(offset)));
+
+        /// <summary>次に取得するリストの上限レコード数を指定します。
+        /// 
+        /// <param name="count">上限レコード数</param>
+        /// <returns>this</returns>
+        /// </summary>
+        public Model_Appliance Limit(long count) => ((Model_Appliance)(this._Limit(count)));
+
+        /// <summary>Web APIのフィルタリング設定を直接指定します。
+        /// 
+        /// <param name="key">キー</param>
+        /// <param name="value">値</param>
+        /// <param name="multiple">valueに配列を与え、OR条件で完全一致検索する場合にtrueを指定します。通常、valueはスカラ値であいまい検索されます。</param>
+        /// </summary>
+        public Model_Appliance FilterBy(string key, object value, bool multiple = false) => ((Model_Appliance)(this._FilterBy(key, value, multiple)));
+
+        /// <summary>次のリクエストのために設定されているステートをすべて破棄します。
+        /// 
+        /// <returns>this</returns>
+        /// </summary>
+        public Model_Appliance Reset() => ((Model_Appliance)(this._Reset()));
+
+        /// <summary>
+        /// <param name="swytch" />
+        /// <param name="vrid" />
+        /// <param name="realIps" />
+        /// <param name="isHighSpec" />
+        /// </summary>
+        public LoadBalancer CreateLoadBalancer(Swytch swytch, long vrid, System.Collections.Generic.List<string> realIps, bool isHighSpec = false) => new LoadBalancer(this._Client, null).SetInitialParams(swytch, vrid, realIps, isHighSpec);
+
+        public VpcRouter CreateVpcRouter() => new VpcRouter(this._Client, null);
+
+        /// <summary>指定したIDを持つ唯一のリソースを取得します。
+        /// 
+        /// <param name="id" />
+        /// <returns>リソースオブジェクト</returns>
+        /// </summary>
+        public Appliance GetById(string id) => ((Appliance)(this._GetById(id)));
+
+        /// <summary>リソースの検索リクエストを実行し、結果をリストで取得します。
+        /// 
+        /// <returns>リソースオブジェクトの配列</returns>
+        /// </summary>
+        public System.Collections.Generic.List<Appliance> Find() => Util.CastArray(this._Find(), ((Appliance)(null)));
+
+        /// <summary>指定した文字列を名前に含むリソースに絞り込みます。
+        /// 
+        /// 大文字・小文字は区別されません。
+        /// 半角スペースで区切られた複数の文字列は、それらをすべて含むことが条件とみなされます。
+        /// 
+        /// 
+        /// <param name="name" />
+        /// </summary>
+        public Model_Appliance WithNameLike(string name) => ((Model_Appliance)(this._WithNameLike(name)));
+
+        /// <summary>指定したタグを持つリソースに絞り込みます。
+        /// 
+        /// 複数のタグを指定する場合は withTags() を利用してください。
+        /// 
+        /// 
+        /// <param name="tag" />
+        /// </summary>
+        public Model_Appliance WithTag(string tag) => ((Model_Appliance)(this._WithTag(tag)));
+
+        /// <summary>指定したすべてのタグを持つリソースに絞り込みます。
+        /// 
+        /// 
+        /// <param name="tags" />
+        /// </summary>
+        public Model_Appliance WithTags(System.Collections.Generic.List<string> tags) => ((Model_Appliance)(this._WithTags(tags)));
+
+        /// <summary>指定したDNFに合致するタグを持つリソースに絞り込みます。
+        /// 
+        /// 
+        /// <param name="dnf" />
+        /// </summary>
+        public Model_Appliance WithTagDnf(System.Collections.Generic.List<System.Collections.Generic.List<string>> dnf) => ((Model_Appliance)(this._WithTagDnf(dnf)));
+
+        /// <summary>名前でソートします。
+        /// 
+        /// 
+        /// <param name="reverse" />
+        /// </summary>
+        public Model_Appliance SortByName(bool reverse = false) => ((Model_Appliance)(this._SortByName(reverse)));
+
+        public Model_Appliance(Client client) : base(client)
 		{
-			return ((Model_Appliance)(this._Offset(offset)));
-		}
-		
-		/// <summary>次に取得するリストの上限レコード数を指定します。
-		/// 
-		/// <param name="count">上限レコード数</param>
-		/// <returns>this</returns>
-		/// </summary>
-		public Model_Appliance Limit(long count)
-		{
-			return ((Model_Appliance)(this._Limit(count)));
-		}
-		
-		/// <summary>Web APIのフィルタリング設定を直接指定します。
-		/// 
-		/// <param name="key">キー</param>
-		/// <param name="value">値</param>
-		/// <param name="multiple">valueに配列を与え、OR条件で完全一致検索する場合にtrueを指定します。通常、valueはスカラ値であいまい検索されます。</param>
-		/// </summary>
-		public Model_Appliance FilterBy(string key, object value, bool multiple=false)
-		{
-			return ((Model_Appliance)(this._FilterBy(key, value, multiple)));
-		}
-		
-		/// <summary>次のリクエストのために設定されているステートをすべて破棄します。
-		/// 
-		/// <returns>this</returns>
-		/// </summary>
-		public Model_Appliance Reset()
-		{
-			return ((Model_Appliance)(this._Reset()));
-		}
-		
-		/// <summary>
-		/// <param name="swytch" />
-		/// <param name="vrid" />
-		/// <param name="realIps" />
-		/// <param name="isHighSpec" />
-		/// </summary>
-		public LoadBalancer CreateLoadBalancer(Swytch swytch, long vrid, System.Collections.Generic.List<string> realIps, bool isHighSpec=false)
-		{
-			LoadBalancer ret = new LoadBalancer(this._Client, null);
-			return ret.SetInitialParams(swytch, vrid, realIps, isHighSpec);
-		}
-		
-		public VpcRouter CreateVpcRouter()
-		{
-			VpcRouter ret = new VpcRouter(this._Client, null);
-			return ret;
-		}
-		
-		/// <summary>指定したIDを持つ唯一のリソースを取得します。
-		/// 
-		/// <param name="id" />
-		/// <returns>リソースオブジェクト</returns>
-		/// </summary>
-		public Appliance GetById(string id)
-		{
-			return ((Appliance)(this._GetById(id)));
-		}
-		
-		/// <summary>リソースの検索リクエストを実行し、結果をリストで取得します。
-		/// 
-		/// <returns>リソースオブジェクトの配列</returns>
-		/// </summary>
-		public System.Collections.Generic.List<Appliance> Find()
-		{
-			return Util.CastArray(this._Find(), ((Appliance)(null)));
-		}
-		
-		/// <summary>指定した文字列を名前に含むリソースに絞り込みます。
-		/// 
-		/// 大文字・小文字は区別されません。
-		/// 半角スペースで区切られた複数の文字列は、それらをすべて含むことが条件とみなされます。
-		/// 
-		/// 
-		/// <param name="name" />
-		/// </summary>
-		public Model_Appliance WithNameLike(string name)
-		{
-			return ((Model_Appliance)(this._WithNameLike(name)));
-		}
-		
-		/// <summary>指定したタグを持つリソースに絞り込みます。
-		/// 
-		/// 複数のタグを指定する場合は withTags() を利用してください。
-		/// 
-		/// 
-		/// <param name="tag" />
-		/// </summary>
-		public Model_Appliance WithTag(string tag)
-		{
-			return ((Model_Appliance)(this._WithTag(tag)));
-		}
-		
-		/// <summary>指定したすべてのタグを持つリソースに絞り込みます。
-		/// 
-		/// 
-		/// <param name="tags" />
-		/// </summary>
-		public Model_Appliance WithTags(System.Collections.Generic.List<string> tags)
-		{
-			return ((Model_Appliance)(this._WithTags(tags)));
-		}
-		
-		/// <summary>指定したDNFに合致するタグを持つリソースに絞り込みます。
-		/// 
-		/// 
-		/// <param name="dnf" />
-		/// </summary>
-		public Model_Appliance WithTagDnf(System.Collections.Generic.List<System.Collections.Generic.List<string>> dnf)
-		{
-			return ((Model_Appliance)(this._WithTagDnf(dnf)));
-		}
-		
-		/// <summary>名前でソートします。
-		/// 
-		/// 
-		/// <param name="reverse" />
-		/// </summary>
-		public Model_Appliance SortByName(bool reverse=false)
-		{
-			return ((Model_Appliance)(this._SortByName(reverse)));
-		}
-		
-		public Model_Appliance(Client client) : base(client)
-		{
-			/*!base!*/;
+			/*!base!*/
 		}
 		
 	}
